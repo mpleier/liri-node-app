@@ -53,7 +53,7 @@ function spotThis(song) {
         log(data.tracks.items[0].name);
         log(data.tracks.items[0].external_urls.spotify);
         log(data.tracks.items[0].album.name);
-        log(endOfLine);
+        log("");
     });
 }
 function watchThis() {
@@ -81,17 +81,17 @@ function watchThis() {
             log(user.Language);
             log(user.Plot);
             log(user.Actors);
-            log(endOfLine);
+            log("");
         } else {
             log("Movie not found.");
-            log(endOfLine);
+            log("");
         }
     });
 }
 
 function errors() {
   var e = ["PEBCAK", "EBKAC", "POBCAK", "One Delta Ten Tango", "Eye Dee Ten Tango", "PICNIC", "IBM error", "layer 8 issue", "wetware bug", "loose nut behind the keyboard", "short between the headphones","defective PTT button actuator", "OHT", "Error 40", "ICC", "Cas-18", "carbon based error"];
-  return e[Math.floor(Math.random() * 17)];
+  return e[Math.floor(Math.random() * e.length)];
 }
 
 switch (process.argv[2]) {
@@ -119,10 +119,10 @@ switch (process.argv[2]) {
                 break;
             default:
                 log(errors());
-                log(endOfLine);
+                log("");
         }
         break;
     default:
         log(errors());
-        log(endOfLine);
+        log("");
 }
