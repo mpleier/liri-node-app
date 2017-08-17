@@ -4,7 +4,7 @@ const fs = require('fs');
 var endOfLine = require('os').EOL;
 function log(data) {
     console.log(data);
-    fs.appendFile('log.txt', data + endOfLine, function(err) {
+    fs.appendFile('./log.txt', data + endOfLine, function(err) {
         if (err) throw err;
     });
 }

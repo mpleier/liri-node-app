@@ -19,6 +19,7 @@
   "dependencies": {
     "request": "*",
     "twitter": "*",
-    "node-spotify-api": "*"
+    "node-spotify-api": "*",
+    "fs": "*"
 },
 }
