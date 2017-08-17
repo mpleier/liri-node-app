@@ -1,0 +1,24 @@
+{
+  "name": "liri-node-app",
+  "version": "1.0.0",
+  "description": "LIRI Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpleier/liri-node-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mpleier/liri-node-app/issues"
+  },
+  "homepage": "https://github.com/mpleier/liri-node-app#readme"
+  "dependencies": {
+    "request": "*",
+    "twitter": "*",
+    "node-spotify-api": "*"
+},
+}
