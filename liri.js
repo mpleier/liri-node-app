@@ -49,11 +49,21 @@ function spotThis(song) {
         if (err) {
             return console.log('Error occurred: ' + err);
         }
-        log(data.tracks.items[0].artists[0].name);
-        log(data.tracks.items[0].name);
-        log(data.tracks.items[0].external_urls.spotify);
-        log(data.tracks.items[0].album.name);
-        log("");
+        var o = "";
+        for (i = 0; i < data.tracks.items.length; i++) {
+            o += data.tracks.items[i].artists[0].name;
+            o += endOfLine;
+            o += data.tracks.items[i].name;
+            o += endOfLine;
+            o += data.tracks.items[i].external_urls.spotify;
+            o += endOfLine;
+            o += data.tracks.items[i].album.name;
+            o += endOfLine;
+            o += endOfLine;
+            o += "--------------------------------";
+            o += endOfLine;
+      }
+      log(o);
     });
 }
 function watchThis() {
